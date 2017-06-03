@@ -28,7 +28,7 @@ struct product
 int dangers(char[]);
 int travelcost(char[], char[]);
 
-int compare(const void *a, const void *b)  // funkcja porÛwnujπca by nie powtarzaÊ miejsca w ktÛry jestem w menu -> q sort
+int compare(const void *a, const void *b)  // funkcja por√≥wnuj¬πca by nie powtarza√¶ miejsca w kt√≥ry jestem w menu -> q sort
 {
     const char *ia = (const char *)a;
     const char *ib = (const char *)b;
@@ -46,7 +46,7 @@ int main()
   
   do
   {
-      fflush(stdin);  //czyszczπ bufory
+      fflush(stdin);  //czyszcz¬π bufory
       system("cls");
       printf("Main menu:\n");
       printf("1. Log in.\n2. Create new account.\n3. Quit.\n");
@@ -66,7 +66,7 @@ int main()
                   while(fread(&check, sizeof(struct acc), 1, f)>0)
                   {
                       if ((strcmp(account.login, check.login)==0)&&(strcmp(account.pass, check.pass)==0)) 
-                      //strcmp funkcja porÛwnujaca ciagi znakow. z pliku/wprowadzony
+                      //strcmp funkcja por√≥wnujaca ciagi znakow. z pliku/wprowadzony
                       {
                            i=1;
                            fp=fopen(account.login, "rt");
@@ -107,15 +107,15 @@ int main()
                            {
                                  case 1: //shopping
                                  {
-                                      fflush(stdin); //czyúci bufor
+                                      fflush(stdin); //czy≈ìci bufor
                                       system("cls");
                                       fp=fopen("products.txt", "rt");
                                       count=0;
                                       while(!feof(fp)) // end of file sprawdza czy plik sie skonczyl
                                       {
-                                            fgets(string, 1000, fp); // pobÛr z pliku do stringu
+                                            fgets(string, 1000, fp); // pob√≥r z pliku do stringu
                                             sscanf(string, "%s %s %d %d %d", product.place, product.name, &product.no, &product.sell, &product.buy);
-                                            // up: pobÛr produktu ze stringu
+                                            // up: pob√≥r produktu ze stringu
                                             if(strcmp(player.place, product.place)==0)
                                             {
                                                  p[count]=product; // zapis do tablicy p
@@ -157,7 +157,7 @@ int main()
                                                                     else if (amount<0) printf("Only positive numbers enabled.\n");
                                                              }
                                                              player.money=player.money-amount*p[b].buy;
-                                                             player.store[op]=player.store[op]+amount; //iloúÊ moich produktÛw
+                                                             player.store[op]=player.store[op]+amount; //ilo≈ì√¶ moich produkt√≥w
                                                              printf("You have successfully bought %d of %s! -%d$\n", amount, p[b].name, amount*p[b].buy);
                                                         }
                                                   }
@@ -283,7 +283,7 @@ int main()
   } while(op!=3); //quit
   return 0;
 }
-//niebezpieczeÒstwa
+//niebezpiecze√±stwa
 int dangers(char name[])
 {
     FILE *f;
