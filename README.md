@@ -1,0 +1,2 @@
+Here we have game in which we can buy/sell shoes from famous desiners. At the beginning player must create a account or login to account previously made.The goal of the game is to collect 3000$. Its not as easy as it seems to be. There arefew dangers. We have following places: Macy's, 5th Avenue, Galeries Lafayette, The Dubai Mall, Galleria Vittorio Emanuele II and Harrods. Player goes between places paying small amount of money.
+Game is mainly bulid with loops, structures, operating on file.
